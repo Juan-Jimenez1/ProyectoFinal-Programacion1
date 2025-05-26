@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="600" prefWidth="479.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.MostrarPrestamosActivosDocenteViewController">
+
+    <Button fx:id="btnRegresar" layoutX="185.0" layoutY="482.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="45.0" prefWidth="109.0" text="Regresar" />
+    <TableView fx:id="tablaPrestamosActivosDocente" layoutX="45.0" layoutY="65.0" prefHeight="400.0" prefWidth="389.0">
+        <columns>
+            <TableColumn fx:id="columnaFechaPrestamo" prefWidth="109.20001220703125" text="Fecha Inicio" />
+            <TableColumn fx:id="columnaFechaLimite" prefWidth="110.0" text="Fecha Limite" />
+            <TableColumn fx:id="columnaLibro" minWidth="0.0" prefWidth="87.0" text="Libro" />
+            <TableColumn fx:id="columnaUsuario" prefWidth="82.60006713867188" text="Usuario" />
+        </columns>
+    </TableView>
+    <Label layoutX="165.0" layoutY="25.0" text="Prestamos Activos">
+        <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+        </font>
+    </Label>
+</AnchorPane>

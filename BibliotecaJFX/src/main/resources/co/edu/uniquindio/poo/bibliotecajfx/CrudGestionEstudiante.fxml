@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.GestionEstudianteViewController">
+
+   <Label layoutX="389.0" layoutY="16.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gestión Estudiantes" />
+
+
+   <TableView fx:id="tablaEstudiantes" layoutX="342.0" layoutY="81.0" prefHeight="400.0" prefWidth="569.0">
+      <columns>
+         <TableColumn fx:id="columnaNombre" prefWidth="109.20001220703125" text="Nombre" />
+         <TableColumn fx:id="columnaIdentificacion" prefWidth="99.80001831054688" text="Identificación" />
+         <TableColumn fx:id="columnaEdad" prefWidth="76.0" text="Edad" />
+         <TableColumn fx:id="columnaCorreo" prefWidth="102.0" text="Correo" />
+         <TableColumn fx:id="columnaTelefono" prefWidth="87.39996337890625" text="Teléfono" />
+         <TableColumn fx:id="columnaContrasenia" prefWidth="90.5999755859375" text="Contraseña" />
+      </columns>
+   </TableView>
+
+
+   <VBox layoutX="30.0" layoutY="504.0" spacing="10.0">
+      <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Opciones Adicionales" />
+      <Button fx:id="btnRegresar" onAction="#onRegresar" text="Regresar" />
+
+   </VBox>
+   <Pane layoutX="10.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
+   <VBox layoutX="30.0" layoutY="52.0" spacing="10.0">
+      <children>
+         <Label prefHeight="46.0" prefWidth="260.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="        Gestión">
+            <font>
+               <Font size="29.0" />
+            </font></Label>
+         <TextField fx:id="textFieldNombreEstudiante" promptText="Nombre" />
+         <TextField fx:id="textFieldIdentificacionEstudiante" promptText="Identificación" />
+         <TextField fx:id="textFieldEdadEstudiante" promptText="Edad" />
+         <TextField fx:id="textFieldCorreoEstudiante" promptText="Correo" />
+         <TextField fx:id="textFieldTelefonoEstudiante" promptText="Teléfono" />
+         <TextField fx:id="textFieldContraseniaEstudiante" promptText="Contraseña" />
+         <Button fx:id="btnAnadirEstudiante" onAction="#onAnadirEstudiante" text="Añadir Estudiante" />
+         <Button fx:id="btnActualizarEstudiante" onAction="#onActualizarEstudiante" text="Actualizar Estudiante" />
+         <Button fx:id="btnEliminarEstudiante" onAction="#onEliminarEstudiante" text="Eliminar Estudiante Seleccionado" />
+         <Button fx:id="btnLimpiarCeldas" onAction="#onLimpiarCampos" text="Limpiar celdas" />
+      </children>
+   </VBox>
+</AnchorPane>

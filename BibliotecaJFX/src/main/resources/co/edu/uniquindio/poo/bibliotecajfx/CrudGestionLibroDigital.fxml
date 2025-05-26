@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.GestionLibroDigitalViewController">
+    <!-- Título -->
+    <Label layoutX="300.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gestión Libros Digitales" />
+
+    <!-- Tabla para listar libros -->
+    <TableView fx:id="tablaLibrosDigitales" layoutX="352.0" layoutY="80.0" prefHeight="400.0" prefWidth="559.0">
+        <columns>
+            <TableColumn fx:id="columnaTitulo" prefWidth="75" text="Título" />
+            <TableColumn fx:id="columnaAutor" prefWidth="75" text="Autor" />
+            <TableColumn fx:id="columnaGenero" prefWidth="75" text="Genero" />
+            <TableColumn fx:id="columnaEstado" prefWidth="75" text="Estado" />
+            <TableColumn fx:id="columnaAnioPublicacion" prefWidth="75" text="Año" />
+            <TableColumn fx:id="columnaFormatoLibro" prefWidth="92.20001220703125" text="Formato Libro" />
+            <TableColumn fx:id="columnaLinkDescarga" prefWidth="87.79998779296875" text="Link Descarga" />
+
+        </columns>
+    </TableView>
+
+    <!-- Panel de opciones -->
+    <VBox layoutX="31.0" layoutY="516.0" spacing="10.0">
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Opciones Adicionales" />
+        <Button fx:id="btnRegresar" onAction="#onRegresar" text="Regresar" />
+
+    </VBox>
+    <Pane layoutX="10.0" layoutY="102.0" prefHeight="278.0" prefWidth="280.0" />
+      <VBox layoutX="31.0" layoutY="30.0" prefHeight="466.0" prefWidth="238.0" spacing="10.0">
+          <children>
+              <Label style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Gestionar Libros " />
+              <TextField fx:id="textFieldTituloLibroDigital" promptText="Título del libro" />
+              <TextField fx:id="textFieldAutorLibroDigital" promptText="Autor del libro" />
+              <TextField fx:id="textFieldGeneroLibroDigital" promptText="Genero del libro" />
+              <TextField fx:id="textFieldAnioPublicacionLibroDigital" promptText="Año de publicación" />
+              <TextField fx:id="textFieldLinkDescargaLibroDigital" promptText="Link de descarga" />
+              <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Formato Del Libro" />
+         <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+               <CheckBox fx:id="CheckBoxPDF" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" text="PDF" />
+               <CheckBox fx:id="CheckBoxEPUB" layoutX="88.0" layoutY="17.0" mnemonicParsing="false" text="EPUB" />
+               <CheckBox fx:id="CheckBoxMOBI" layoutX="162.0" layoutY="17.0" mnemonicParsing="false" text="MOBI" />
+            </children>
+         </Pane>
+              <Button fx:id="btnActualizarLibro" onAction="#onActualizarLibro" text="Actualizar Libro" />
+              <Button fx:id="btnAnadirLibroDigital" onAction="#onAnadirLibroDigital" text="Añadir Libro" />
+              <Button fx:id="btnEliminarLibro" onAction="#onEliminarLibro" text="Eliminar Libro Seleccionado" />
+              <Button fx:id="btnLimpiarCeldas" onAction="#onLimpiarCampos" text="Limpiar Celdas" />
+          </children>
+      </VBox>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.AdministradorViewController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+             <Label layoutX="214.0" layoutY="14.0" prefHeight="35.0" prefWidth="172.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Administrador" />
+            <Label layoutX="75.0" layoutY="136.0" text="Gestion Bibliotecarios">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Label>
+            <Button fx:id="btnGestionarBibliotecarios" layoutX="79.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="153.0" text="Gestionar Bibliotecarios" onAction="#onOpenCrudGestionarBibliotecarios" />
+            <Label layoutX="362.0" layoutY="136.0" text="Reportes Avanzados">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnReporteLibrosSinPrestamos" layoutX="370.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" text="Libros Sin Prestamos" onAction="#onOpenCrudReporteLibrosSinPrestamos"/>
+            <Button fx:id="btnReporteUsuarioConMasPrestamos" layoutX="370.0" layoutY="264.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" text="Usuario Con Mas Prestamos" onAction="#onOpenCrudReporteUsuarioConMasPrestamos"/>
+            <Button fx:id="btnReporteLibrosPrestadosEnMes" layoutX="370.0" layoutY="321.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" text="Libros Prestados En Mes" onAction="#onOpenCrudReporteLibrosPrestadosEnMes"/>
+            <Button fx:id="btnCerrarSesion" layoutX="496.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="92.0" text="Cerrar Sesion" onAction="#onCerrarSesion"/>
+         </children></Pane>
+   </children>
+</AnchorPane>

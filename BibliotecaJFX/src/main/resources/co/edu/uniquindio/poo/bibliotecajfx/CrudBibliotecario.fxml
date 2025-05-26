@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.BibliotecarioViewController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="3.0" prefHeight="394.0" prefWidth="600.0">
+         <children>
+             <Label layoutX="222.0" layoutY="15.0" prefHeight="35.0" prefWidth="155.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Bibliotecario" />
+            <Label layoutX="78.0" layoutY="99.0" text="Gestionar Usuarios">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="90.0" prefHeight="55.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font></Label>
+            <Label layoutX="293.0" layoutY="146.0" prefHeight="55.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="276.0" prefHeight="65.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="211.0" prefHeight="55.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="329.0" prefHeight="55.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="293.0" layoutY="33.0" prefHeight="55.0" prefWidth="13.0" text="|">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGestionarEstudiantes" layoutX="13.0" layoutY="143.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" text="Estudiantes" onAction="#onGestionarEstudiantes" />
+            <Button fx:id="btnGestionarDocentes" layoutX="110.0" layoutY="143.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" text="Docentes" onAction="#onGestionarDocentes" />
+            <Button fx:id="btnGestionarVisitantes" layoutX="204.0" layoutY="143.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" text="Visitantes" onAction="#onGestionarVisitantes"/>
+            <Label layoutX="306.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="363.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="450.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="479.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="508.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="566.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="358.0" layoutY="99.0" text="Gestionar Prestamos">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRealizarPrestamo" layoutX="310.0" layoutY="139.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="126.0" text="Realizar Prestamo" />
+            <Button fx:id="btnRealizarDevolucion" layoutX="464.0" layoutY="139.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="126.0" text="Realizar Devolucion" />
+            <Label layoutX="342.0" layoutY="281.0" text="Reportes">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnReporteLibroMasSolicitado" layoutX="464.0" layoutY="246.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Libro Mas Solicitado" />
+            <Button fx:id="btnReporteUsuariosDeudores" layoutX="464.0" layoutY="291.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Usuarios Deudores" />
+            <Button fx:id="btnReporteLibrosPrestados" layoutX="464.0" layoutY="341.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Libros Prestados" />
+            <Label layoutX="204.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="244.0" text="Gestionar Libros">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnGestionarLibrosFisicos" layoutX="13.0" layoutY="292.0" mnemonicParsing="false" onAction="#onGestionarLibrosFisicos" prefHeight="35.0" prefWidth="84.0" text="Fisicos" />
+            <Button fx:id="btnGestionarLibrosDigitales" layoutX="110.0" layoutY="292.0" mnemonicParsing="false" onAction="#onGestionarLibrosDigitales" prefHeight="35.0" prefWidth="84.0" text="Digitales" />
+            <Button fx:id="btnGestionarLibrosReferencia" layoutX="204.0" layoutY="291.0" mnemonicParsing="false" onAction="#onGestionarLibrosReferencia" prefHeight="35.0" prefWidth="84.0" text="Referencia" />
+            <Button fx:id="btnCerrarSesion" layoutX="491.0" layoutY="15.0" mnemonicParsing="false" onAction="#onCerrarSesion" prefHeight="35.0" prefWidth="93.0" text="Cerrar Sesion" />
+            <Label layoutX="232.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+         </children></Pane>
+
+   </children>
+</AnchorPane>

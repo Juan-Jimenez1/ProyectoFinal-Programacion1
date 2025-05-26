@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.VerificarCodigoAdministradorViewController">
+    <children>
+        <Pane layoutX="6.0" layoutY="3.0" prefHeight="400.0" prefWidth="602.0">
+            <children>
+                <Label layoutX="180.0" layoutY="14.0" prefHeight="35.0" prefWidth="226.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Codigo Verificacion" />
+                <TextField fx:id="textFieldCodigo" layoutX="208.0" layoutY="166.0" prefHeight="34.0" prefWidth="169.0" promptText="Codigo Verificación" />
+                <Button fx:id="btnVerificarCodigo" layoutX="302.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" text="Verificar Codigo" onAction="#onVerificarCodigo"/>
+                <Button fx:id="btnEnviarCodigo" layoutX="133.0" layoutY="247.0" mnemonicParsing="false" onAction="#onEnviarCodigo" prefHeight="40.0" prefWidth="149.0" text="Recibir Codigo" />
+                 <Label layoutX="115.0" layoutY="96.0" text="Se necesita verificar la identidad con un codigo de verificacion">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.GestionBibiotecarioViewController">
+
+    <Label layoutX="300.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gestión Bibliotecarios" />
+
+
+    <TableView fx:id="tablaBibliotecarios" layoutX="342.0" layoutY="81.0" prefHeight="400.0" prefWidth="609.0">
+        <columns>
+            <TableColumn fx:id="columnaNombre" prefWidth="109.20001220703125" text="Nombre" />
+            <TableColumn fx:id="columnaIdentificacion" prefWidth="92.00003051757812" text="Identificación" />
+            <TableColumn fx:id="columnaEdad" prefWidth="61.79998779296875" text="Edad" />
+            <TableColumn fx:id="columnaCorreo" prefWidth="103.60003662109375" text="Correo" />
+            <TableColumn fx:id="columnaTelefono" prefWidth="83.79998779296875" text="Teléfono" />
+            <TableColumn fx:id="columnaContrasenia" prefWidth="77.79998779296875" text="Contraseña" />
+            <TableColumn fx:id="columnaCredencial" prefWidth="79.800048828125" text="Credencial" />
+        </columns>
+    </TableView>
+
+
+    <VBox layoutX="30.0" layoutY="504.0" spacing="10.0">
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Opciones Adicionales" />
+        <Button fx:id="btnRegresar" text="Regresar" onAction="#onRegresar"/>
+
+    </VBox>
+    <Pane layoutX="10.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
+    <VBox layoutX="30.0" layoutY="52.0" spacing="10.0">
+        <children>
+            <Label prefHeight="46.0" prefWidth="260.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="        Gestión">
+            <font>
+               <Font size="29.0" />
+            </font></Label>
+            <TextField fx:id="textFieldNombreBibliotecario" promptText="Nombre" />
+            <TextField fx:id="textFieldIdentificacionBibliotecario" promptText="Identificación" />
+            <TextField fx:id="textFieldEdadBibliotecario" promptText="Edad" />
+            <TextField fx:id="textFieldCorreoBibliotecario" promptText="Correo" />
+            <TextField fx:id="textFieldTelefonoBibliotecario" promptText="Teléfono" />
+            <TextField fx:id="textFieldContraseniaBibliotecario" promptText="Contraseña" />
+            <TextField fx:id="textFieldCredencialBibliotecario" promptText="Credencial" />
+            <Button fx:id="btnAnadirBibliotecario" onAction="#onAnadirBibliotecario" text="Añadir Bibliotecario" />
+            <Button fx:id="btnActualizarBibliotecario" onAction="#onActualizarBibliotecario" text="Actualizar Bibliotecario" />
+            <Button fx:id="btnEliminarBibliotecario" onAction="#onEliminarBibliotecario" text="Eliminar Bibliotecario Seleccionado" />
+            <Button fx:id="btnLimpiarCeldas" onAction="#onLimpiarCampos" text="Limpiar celdas" />
+        </children>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.DocenteViewController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="602.0">
+            <children>
+                <Label layoutX="251.0" layoutY="14.0" prefHeight="35.0" prefWidth="100.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Docente" />
+                <Button fx:id="btnVerHistorialPrestamosDocente" layoutX="33.0" layoutY="188.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="152.0" text="Ver Historial Prestamos" onAction="#onOpenCrudVerHistorialPrestamosDocente"/>
+                <Button fx:id="btnVerLibrosDocente" layoutX="225.0" layoutY="185.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="152.0" text="Ver Libros" onAction="#onOpenCrudVerLibrosDocente"/>
+                <Button fx:id="btnVerPrestamosActivosDocente" layoutX="413.0" layoutY="185.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="152.0" text="Ver Prestamos Activos" onAction="#onOpenCrudVerPrestamosActivosDocente"/>
+                <Label layoutX="181.0" layoutY="110.0" text="Seleccione que desea realizar:">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnCerrarSesionDocente" layoutX="255.0" layoutY="302.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="92.0" text="Cerrar Sesion" onAction="#onCerrarSesionDocente" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

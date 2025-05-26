@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.InicioSesionBibliotecarioViewController">
+   <children>
+      <Pane layoutX="12.0" layoutY="6.0" prefHeight="400.0" prefWidth="602.0">
+         <children>
+             <Label layoutX="145.0" layoutY="67.0" prefHeight="35.0" prefWidth="313.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Inicio Sesion - Bibliotecario" />
+            <Button fx:id="btnAccederBibliotecario" layoutX="227.0" layoutY="273.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" text="Acceder" onAction="#onAcceder"/>
+            <TextField fx:id="textFieldCredencialBibliotecario" layoutX="217.0" layoutY="149.0" prefHeight="34.0" prefWidth="169.0" promptText="Credencial" />
+            <TextField fx:id="textFieldContraseniaBibliotecario" layoutX="217.0" layoutY="210.0" prefHeight="34.0" prefWidth="169.0" promptText="Contraseña" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.HistorialPrestamosDocenteViewController">
+
+
+        <Button fx:id="btnRegresar" layoutX="242.0" layoutY="484.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="45.0" prefWidth="109.0" text="Regresar" />
+        <TableView fx:id="tablaHistorialPrestamosDocente" layoutX="52.0" layoutY="52.0" prefHeight="400.0" prefWidth="510.0">
+            <columns>
+                <TableColumn fx:id="columnaFechaPrestamo" prefWidth="109.20001220703125" text="Fecha Inicio" />
+                <TableColumn fx:id="columnaFechaLimite" prefWidth="110.0" text="Fecha Limite" />
+                <TableColumn fx:id="columnaFechaDevolucion" prefWidth="118.39999389648438" text="Fecha Devolución" />
+                <TableColumn fx:id="columnaLibro" minWidth="0.0" text="Libro" />
+                <TableColumn fx:id="columnaUsuario" prefWidth="87.20001831054685" text="Usuario" />
+            </columns>
+        </TableView>
+        <Label layoutX="203.0" layoutY="14.0" text="Historial De Prestamos">
+            <font>
+                <Font name="Times New Roman Bold" size="19.0" />
+            </font>
+        </Label>
+
+</AnchorPane>

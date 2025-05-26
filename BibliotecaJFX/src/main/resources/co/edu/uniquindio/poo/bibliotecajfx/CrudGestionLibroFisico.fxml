@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600" prefWidth="1000" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.GestionLibroFisicoViewController">
+    <!-- Título -->
+    <Label layoutX="300.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gestión Libros Físicos" />
+
+    <!-- Tabla para listar libros -->
+    <TableView fx:id="tablaLibrosFisicos" layoutX="300.0" layoutY="80.0" prefHeight="400.0" prefWidth="650.0">
+        <columns>
+            <TableColumn fx:id="columnaTitulo" prefWidth="109.20001220703125" text="Título" />
+            <TableColumn fx:id="columnaAutor" prefWidth="67.60000610351562" text="Autor" />
+            <TableColumn fx:id="columnaGenero" prefWidth="68.60000610351562" text="Genero" />
+            <TableColumn fx:id="columnaEstado" prefWidth="76.79998779296875" text="Estado" />
+            <TableColumn fx:id="columnaAnioPublicacion" prefWidth="65.0" text="Año" />
+            <TableColumn fx:id="columnaNumeroPaginas" prefWidth="71.0" text="Paginas" />
+            <TableColumn fx:id="columnaEditorial" prefWidth="92.0" text="Editorial" />
+            <TableColumn fx:id="columnaUbicacionBiblioteca" prefWidth="97.60001220703123" text="Ubicación" />
+        </columns>
+    </TableView>
+
+    <!-- Panel de opciones -->
+    <VBox layoutX="30.0" layoutY="504.0" spacing="10.0">
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Opciones Adicionales" />
+        <Button fx:id="btnRegresar" text="Regresar" onAction="#onRegresar"/>
+
+    </VBox>
+   <Pane layoutX="10.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
+   <VBox layoutX="30.0" layoutY="52.0" spacing="10.0">
+      <children>
+         <Label style="-fx-font-size: 30px; -fx-font-weight: bold;" text="Gestionar Libros " />
+         <TextField fx:id="textFieldTituloLibroFisico" promptText="Título del libro" />
+         <TextField fx:id="textFieldAutorLibroFisico" promptText="Autor del libro" />
+         <TextField fx:id="textFieldGeneroLibroFisico" promptText="Genero del libro" />
+          <TextField fx:id="textFieldAnioPublicacionLibroFisico" promptText="Año de publicación" />
+          <TextField fx:id="textFieldNumeroPaginasLibroFisico" promptText="Numero de paginas" />
+          <TextField fx:id="textFieldEditorialLibroFisico" promptText="Editorial del libro" />
+          <TextField fx:id="textFieldUbicacionLibroFisico" promptText="Ubicación del libro" />
+         <Button fx:id="btnAnadirLibroFisico" onAction="#onAnadirLibroDigital" text="Añadir Libro" />
+          <Button fx:id="btnActualizarLibro" onAction="#onActualizarLibro" text="Actualizar Libro" />
+          <Button fx:id="btnEliminarLibro" onAction="#onEliminarLibro" text="Eliminar Libro Seleccionado" />
+          <Button fx:id="btnLimpiarCeldas" onAction="#onLimpiarCampos" text="Limpiar celdas" />
+      </children>
+   </VBox>
+</AnchorPane>

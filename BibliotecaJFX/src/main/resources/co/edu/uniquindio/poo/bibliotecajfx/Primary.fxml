@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.PrimaryViewController">
+
+    <!-- Mensaje de bienvenida -->
+    <Label layoutX="239.0" layoutY="14.0" prefHeight="27.0" prefWidth="122.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-alignment: center;" text="Biblioteca UQ" wrapText="true" />
+
+    <!-- Botón de ingresar -->
+    <Button fx:id="btnIngresar" layoutX="239.0" layoutY="223.0" prefHeight="40.0" prefWidth="122.0" text="Ingresar / Acceder" onAction="#onOpenCrudSeleccionGrupoUsuario" />
+   <Label layoutX="253.0" layoutY="86.0" prefHeight="28.0" prefWidth="94.0" text="Bienvenido">
+      <font>
+         <Font name="Comic Sans MS" size="19.0" />
+      </font>
+   </Label>
+   <Label layoutX="165.0" layoutY="145.0" prefHeight="28.0" prefWidth="270.0" text="Ingrese a su cuenta para continuar">
+      <font>
+         <Font name="Times New Roman" size="19.0" />
+      </font>
+   </Label>
+   <Label layoutX="145.0" layoutY="313.0" prefHeight="28.0" prefWidth="310.0" text="¿No tienes una cuenta? Contacta a un bibliotecario">
+      <font>
+         <Font name="Times New Roman" size="15.0" />
+      </font>
+   </Label>
+
+</AnchorPane>
