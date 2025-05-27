@@ -530,6 +530,22 @@ public class App extends Application {
             e.printStackTrace();
         }
     }
+    public void openCrudLibroMasSolicitado() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("CrudLibroMasSolicitado.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            LibroMasSolicitadoViewController libroMasSolicitadoViewController= loader.getController();
+            libroMasSolicitadoViewController.setApp(this);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
 
 
 

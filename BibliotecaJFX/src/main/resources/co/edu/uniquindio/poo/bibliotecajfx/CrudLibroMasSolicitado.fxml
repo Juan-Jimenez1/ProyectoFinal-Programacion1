@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="405.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.LibroMasSolicitadoViewController">
+    <Button fx:id="btnRegresar" layoutX="362.0" layoutY="317.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="45.0" prefWidth="109.0" text="Regresar" />
+    <TableView fx:id="tablaLibroMasSolicitado" layoutX="83.0" layoutY="179.0" prefHeight="88.0" prefWidth="662.0">
+        <columns>
+            <TableColumn fx:id="columnaTitulo" prefWidth="150.0" text="Título" />
+            <TableColumn fx:id="columnaAutor" prefWidth="150.0" text="Autor" />
+            <TableColumn fx:id="columnaGenero" prefWidth="120.0" text="Género" />
+            <TableColumn fx:id="columnaEstado" prefWidth="120.5999755859375" text="Estado" />
+            <TableColumn fx:id="columnaAnioPublicacion" prefWidth="121.0" text="Año Publicación" />
+        </columns>
+    </TableView>
+    <Label layoutX="331.0" layoutY="64.0" text="Libro Mas Solicitado">
+        <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+        </font>
+    </Label>
+</AnchorPane>

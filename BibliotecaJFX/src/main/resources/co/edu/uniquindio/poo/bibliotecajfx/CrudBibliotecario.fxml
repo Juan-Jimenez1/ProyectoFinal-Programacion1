@@ -108,7 +108,7 @@
                   <Font name="Times New Roman" size="20.0" />
                </font>
             </Label>
-            <Button fx:id="btnReporteLibroMasSolicitado" layoutX="464.0" layoutY="246.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Libro Mas Solicitado" />
+            <Button fx:id="btnReporteLibroMasSolicitado" layoutX="464.0" layoutY="246.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Libro Mas Solicitado" onAction="#onReportarLibroMasSolicitado"/>
             <Button fx:id="btnReporteUsuariosDeudores" layoutX="464.0" layoutY="291.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Usuarios Deudores" />
             <Button fx:id="btnReporteLibrosPrestados" layoutX="464.0" layoutY="341.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="126.0" text="Libros Prestados" />
             <Label layoutX="204.0" layoutY="160.0" prefHeight="35.0" prefWidth="29.0" text="-">

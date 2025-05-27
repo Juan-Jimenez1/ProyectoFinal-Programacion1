@@ -65,6 +65,7 @@ public class BibliotecarioViewController {
     }
     @FXML
     void onReportarLibroMasSolicitado() {
+        app.openCrudLibroMasSolicitado();
 
     }
     @FXML
