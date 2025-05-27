@@ -534,10 +534,14 @@ public class Bibliotecario extends Empleado {
         return false;
     }
 
-
-
-
-
+    /**
+     * Actualiza la instancia de Biblioteca para este objeto.
+     *
+     * @param biblioteca el objeto Biblioteca que se va a establecer
+     */
+    public void setBiblioteca(Biblioteca biblioteca) {
+        this.biblioteca = biblioteca;
+    }
 
     /**
      * Devuelve una representación en formato de texto del objeto Bibliotecario,

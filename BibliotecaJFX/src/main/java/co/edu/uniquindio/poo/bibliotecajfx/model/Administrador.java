@@ -219,6 +219,24 @@ public class Administrador extends Empleado {
         }
         return librosSinPrestamos;
     }
+
+    /**
+     * Obtiene la biblioteca asociada al administrador.
+     *
+     * @return Biblioteca asociada al administrador.
+     */
+    public Biblioteca getBiblioteca() {
+        return biblioteca;
+    }
+
+    /**
+     * Actualiza la biblioteca asociada al administrador.
+     *
+     * @param biblioteca Biblioteca que será asignada al administrador.
+     */
+    public void setBiblioteca(Biblioteca biblioteca) {
+        this.biblioteca = biblioteca;
+    }
 }
 
 

@@ -151,4 +151,5 @@ public class Docente extends Usuario implements IPrestamosUsuarios {
     public void libroDevuelto(Prestamo prestamo) {
         listPrestamosDocentes.remove(prestamo);
     }
+
 }

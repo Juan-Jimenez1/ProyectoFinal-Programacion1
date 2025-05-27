@@ -57,10 +57,12 @@ public class BibliotecarioViewController {
 
     @FXML
     void onRealizarDevolucion() {
+        app.openCrudRealizarDevolucion();
 
     }
     @FXML
     void onRealizarPrestamo() {
+        app.openCrudPrestamo();
 
     }
     @FXML
@@ -70,10 +72,12 @@ public class BibliotecarioViewController {
     }
     @FXML
     void onReportarUsuariosDeudores() {
+        app.openCrudUsuariosDeudores();
 
     }
     @FXML
     void onReportarLibrosPrestados() {
+        app.openCrudMostrarLibrosPrestados();
 
     }
     @FXML

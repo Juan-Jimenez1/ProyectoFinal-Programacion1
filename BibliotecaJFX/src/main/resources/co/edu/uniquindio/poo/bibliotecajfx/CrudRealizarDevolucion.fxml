@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.RealizarDevolucionViewController">
+    <Button fx:id="btnRegresar" layoutX="32.0" layoutY="534.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="45.0" prefWidth="109.0" text="Regresar" />
+    <TableView fx:id="tablaPrestamos" layoutX="304.0" layoutY="82.0" prefHeight="400.0" prefWidth="389.0">
+        <columns>
+            <TableColumn fx:id="columnaFechaPrestamo" prefWidth="109.20001220703125" text="Fecha Inicio" />
+            <TableColumn fx:id="columnaFechaLimite" prefWidth="110.0" text="Fecha Limite" />
+            <TableColumn fx:id="columnaLibro" minWidth="0.0" prefWidth="87.0" text="Libro" />
+            <TableColumn fx:id="columnaUsuario" prefWidth="82.60006713867188" text="Usuario" />
+        </columns>
+    </TableView>
+    <Label layoutX="181.0" layoutY="29.0" text="Realizar Devolucion Prestamo">
+        <font>
+            <Font name="Times New Roman Bold" size="19.0" />
+        </font>
+    </Label>
+   <Button fx:id="btnRealizarDevolucion" layoutX="79.0" layoutY="334.0" mnemonicParsing="false" onAction="#onRealizarDevolucion" prefHeight="46.0" prefWidth="145.0" text="Realizar Devolucion" />
+   <Label layoutX="26.0" layoutY="262.0" text="Selecciona un prestamo a devolver">
+      <font>
+         <Font name="Times New Roman Bold" size="17.0" />
+      </font>
+   </Label>
+</AnchorPane>

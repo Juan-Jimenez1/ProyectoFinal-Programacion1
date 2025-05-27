@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.PrestamoViewController">
+   <children>
+      <Pane prefHeight="446.0" prefWidth="989.0">
+         <children>
+            <Label layoutX="473.0" layoutY="14.0" text="Libros">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </Label>
+             <Label layoutX="196.0" layoutY="7.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Registo Prestamos" />
+            <TextField fx:id="textFieldIdentificacionUsuario" layoutX="95.0" layoutY="184.0" promptText="Identificacion Usuario" />
+            <Button fx:id="btnCrearPrestamo" layoutX="112.0" layoutY="232.0" mnemonicParsing="false" onAction="#onCrearPrestamo" prefHeight="35.0" prefWidth="115.0" text="Crear Prestamo" />
+            <Button fx:id="btnLimpiarCampos" layoutX="118.0" layoutY="289.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="25.0" prefWidth="103.0" text="Limpiar campos" />
+            <Button fx:id="btnRegresar" layoutX="7.0" layoutY="389.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="35.0" prefWidth="93.0" text="Regresar" />
+            <Label layoutX="55.0" layoutY="143.0" text="Ingrese la identificacion del usuario">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tablaLibrosPrestamo" layoutX="300.0" layoutY="42.0" prefHeight="400.0" prefWidth="654.0">
+               <columns>
+                  <TableColumn fx:id="columnaTitulo" prefWidth="150.0" text="Título" />
+                  <TableColumn fx:id="columnaAutor" prefWidth="150.0" text="Autor" />
+                  <TableColumn fx:id="columnaGenero" prefWidth="120.0" text="Género" />
+                  <TableColumn fx:id="columnaAnioPublicacion" prefWidth="150.0" text="Año Publicación" />
+                  <TableColumn fx:id="columnaEstado" prefWidth="82.39999999999998" text="Estado" />
+               </columns>
+            </TableView>
+            <Label layoutX="107.0" layoutY="102.0" text="Seleccione un libro">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

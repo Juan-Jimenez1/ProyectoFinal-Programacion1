@@ -30,6 +30,14 @@ public class InicioSesionAdministradorViewController {
     private Button btnAcceder;
 
     @FXML
+    private Button btnRegresar;
+
+    @FXML
+    void onRegresar() {
+        app.openCrudPrimary();
+    }
+
+    @FXML
     void onAcceder() {
         String credencial = textFieldCredencial.getText();
         String contrasenia = textFieldContrasenia.getText();

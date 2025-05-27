@@ -5,10 +5,10 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.bibliotecajfx.viewController.GestionLibroReferenciaViewController">
 
-    <!-- Título principal -->
+
     <Label layoutX="330.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gestión de Libros de Referencia" />
 
-    <!-- Tabla para listar libros de referencia -->
+
     <TableView fx:id="tablaLibrosReferencia" layoutX="330.0" layoutY="80.0" prefHeight="450.0" prefWidth="572.0">
         <columns>
             <TableColumn fx:id="columnaTitulo" prefWidth="150.0" text="Título" />
@@ -18,9 +18,9 @@
         </columns>
     </TableView>
 
-    <!-- Panel de Gestión -->
+
     <VBox layoutX="30.0" layoutY="63.0" prefHeight="387.0" prefWidth="270.0" spacing="15.0">
-        <!-- Título del Panel -->
+
         <Label prefHeight="30.0" prefWidth="159.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Gestionar Libros" />
         <TextField fx:id="textFieldTitulo" promptText="Título del libro" />
         <TextField fx:id="textFieldAutor" promptText="Autor" />

@@ -31,6 +31,14 @@ public class InicioSesionEstudianteViewController {
     private Button btnAccederEstudiante;
 
     @FXML
+    private Button btnRegresar;
+
+    @FXML
+    void onRegresar() {
+        app.openCrudPrimary();
+    }
+
+    @FXML
     void onAcceder() {
         String identificacion = textFieldIdentificacionEstudiante.getText();
         String contrasenia = textFieldContraseniaEstudiante.getText();

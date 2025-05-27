@@ -8,9 +8,10 @@
         <Pane layoutX="12.0" layoutY="6.0" prefHeight="400.0" prefWidth="602.0">
             <children>
                 <Label layoutX="136.0" layoutY="67.0" prefHeight="35.0" prefWidth="332.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Inicio Sesion - Administrador" />
-                <Button fx:id="btnAccceder" layoutX="227.0" layoutY="273.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" text="Acceder" onAction="#onAcceder"/>
+                <Button fx:id="btnAcceder" layoutX="227.0" layoutY="273.0" mnemonicParsing="false" onAction="#onAcceder" prefHeight="40.0" prefWidth="149.0" text="Acceder" />
                 <TextField fx:id="textFieldCredencial" layoutX="217.0" layoutY="149.0" prefHeight="34.0" prefWidth="169.0" promptText="Credencial" />
                 <TextField fx:id="textFieldContrasenia" layoutX="217.0" layoutY="210.0" prefHeight="34.0" prefWidth="169.0" promptText="Contraseña" />
+            <Button fx:id="btnRegresar" layoutX="24.0" layoutY="332.0" mnemonicParsing="false" onAction="#onRegresar" prefHeight="34.0" prefWidth="76.0" text="Regresar" />
             </children>
         </Pane>
     </children>

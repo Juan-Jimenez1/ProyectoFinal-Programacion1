@@ -545,6 +545,68 @@ public class App extends Application {
             e.printStackTrace();
         }
     }
+    public void openCrudUsuariosDeudores() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("CrudUsuariosDeudores.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            UsuariosDeudoresViewController usuariosDeudoresViewController= loader.getController();
+            usuariosDeudoresViewController.setApp(this);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    public void openCrudPrestamo() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("CrudPrestamo.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            PrestamoViewController prestamoViewController= loader.getController();
+            prestamoViewController.setApp(this);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public void openCrudRealizarDevolucion() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("CrudRealizarDevolucion.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            RealizarDevolucionViewController realizarDevolucionViewController= loader.getController();
+            realizarDevolucionViewController.setApp(this);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public void openCrudMostrarLibrosPrestados() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("CrudMostrarLibrosPrestados.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            MostrarLibrosPrestadosViewController mostrarLibrosPrestadosViewController= loader.getController();
+            mostrarLibrosPrestadosViewController.setApp(this);
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
 
 
 

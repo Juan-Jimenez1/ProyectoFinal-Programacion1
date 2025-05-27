@@ -31,6 +31,14 @@ public class InicioSesionVisitanteViewController {
     private Button btnAccederVisitante;
 
     @FXML
+    private Button btnRegresar;
+
+    @FXML
+    void onRegresar() {
+        app.openCrudPrimary();
+    }
+
+    @FXML
     void onAcceder() {
         String identificacion = textFieldIdentificacionVisitante.getText();
         String contrasenia = textFieldContraseniaVisitante.getText();

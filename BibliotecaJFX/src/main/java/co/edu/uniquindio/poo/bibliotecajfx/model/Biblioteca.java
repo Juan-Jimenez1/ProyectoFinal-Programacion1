@@ -529,6 +529,16 @@ public class Biblioteca {
     }
 
     /**
+     * Obtiene la lista de empleados.
+     *
+     * @return una lista de objetos Empleado que representa a los empleados.
+     */
+    public List<Empleado> getListEmpleados() {
+        return listEmpleados;
+    }
+
+
+    /**
      *    Metodo toString devuelve la información de la biblioteca como una cadena.
      *
      * @return Una cadena representando la biblioteca.

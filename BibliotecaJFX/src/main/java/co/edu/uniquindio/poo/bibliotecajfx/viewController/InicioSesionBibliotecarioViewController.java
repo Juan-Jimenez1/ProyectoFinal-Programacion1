@@ -28,7 +28,15 @@ public class InicioSesionBibliotecarioViewController {
     private TextField textFieldContraseniaBibliotecario;
 
     @FXML
-    private Button btnAcccederBibliotecario;
+    private Button btnAccederBibliotecario;
+
+    @FXML
+    private Button btnRegresar;
+
+    @FXML
+    void onRegresar() {
+        app.openCrudPrimary();
+    }
 
     @FXML
     void onAcceder() {
